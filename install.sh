@@ -1,6 +1,11 @@
+#!/bin/sh
+
 # #########################################
 # Test install script
 # #########################################
+
+# This install script is intended to be executed like this:
+# > curl https://raw.githubusercontent.com/JurekInholland/dotfiles/master/install.sh | sh 
 
 echo "Install started."
 cd ..

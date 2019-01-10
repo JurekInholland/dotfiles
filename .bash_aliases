@@ -8,4 +8,11 @@ alias reloadcfg="source ~/.bash_aliases"
 alias editcfg="sudo nano ~/.bash_aliases"
 alias myaliases="cat ~/.bash_aliases"
 
+
+# Docker commands
+alias dcu="docker-compose down && docker-compose up -d"
+alias dcd="docker-compose down"
+
+function des { docker exec -it "$1" sh; }
+export -f des 
 # https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly#install-docker-and-docker-compose-within-wsl
