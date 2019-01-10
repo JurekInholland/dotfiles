@@ -10,8 +10,12 @@ alias myaliases="cat ~/.bash_aliases"
 
 
 # Docker commands
-alias dcu="docker-compose down && docker-compose up -d"
-alias dcd="docker-compose down"
+alias dps="sudo docker ps"
 
-des() { docker exec -it "$1" sh; }
+# Docker-compose
+alias dcu="sudo docker-compose down && docker-compose up -d"
+alias dcd="sudo docker-compose down"
+
+
+des() { docker exec -it "$1" sh; } # Docker exec shell
 # https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly#install-docker-and-docker-compose-within-wsl
