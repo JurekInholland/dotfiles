@@ -5,4 +5,4 @@ sudo apt-get install -y zsh
 
 echo "script executed"
 
-. ~/.bash_aliases
+source ~/.bash_aliases
