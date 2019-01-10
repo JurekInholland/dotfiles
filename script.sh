@@ -1,6 +1,8 @@
-apt-get install 
+#!/bin/bash
+
+sudo apt-get install 
 
 sh makesymlinks.sh
 echo "script executed"
 
-source ~/.bash_aliases
+. ~/.bash_aliases
