@@ -13,6 +13,6 @@ alias myaliases="cat ~/.bash_aliases"
 alias dcu="docker-compose down && docker-compose up -d"
 alias dcd="docker-compose down"
 
-export function des { docker exec -it "$1" sh; }
+function des() { docker exec -it "$1" sh; }
 
 # https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly#install-docker-and-docker-compose-within-wsl
