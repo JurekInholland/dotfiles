@@ -1,9 +1,12 @@
+
+. ~/.bash_aliases # source self
+
 # Aliases to quickly setup a new debian based VM/server
 alias update="sudo apt update && sudo apt upgrade"
 alias inst="sudo apt install -y"
 alias uninst="sudo apt remove -y"
 alias instessentials="inst git, wget, htop, nano"
-alias instdocker="wget -qO- https://get.docker.com/ | sh && sudo usermod -aG docker $(whoami) && "
+alias instdocker="wget -qO- https://get.docker.com/ | sh && sudo usermod -aG docker $(whoami) && instdcp"
 alias reloadcfg="source ~/.bash_aliases"
 alias editcfg="sudo nano ~/.bash_aliases"
 alias myaliases="cat ~/.bash_aliases"
@@ -11,11 +14,14 @@ alias myaliases="cat ~/.bash_aliases"
 
 # Docker commands
 alias dps="sudo docker ps"
+alias dtest="sudo docker run --rm -it"
 
 # Docker-compose
 alias dcu="sudo docker-compose down && docker-compose up -d"
 alias dcd="sudo docker-compose down"
 
+
+alias docker="sudo docker"
 
 des() { docker exec -it "$1" sh; } # Docker exec shell
 

@@ -9,6 +9,9 @@
 
 echo "Install started."
 
+apt install sudo
+sudo apt-get install git
+
 cd $HOME
 git clone "https://github.com/JurekInholland/dotfiles"
 cd ~/dotfiles
