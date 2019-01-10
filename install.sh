@@ -5,3 +5,4 @@
 echo "Install started."
 cd ..
 ls
+ls /
