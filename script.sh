@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 
 sh makesymlinks.sh
 echo "script executed"
