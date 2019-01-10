@@ -8,9 +8,7 @@
 # > curl https://raw.githubusercontent.com/JurekInholland/dotfiles/master/install.sh | sh 
 
 echo "Install started."
-cd ..
-echo "home:"
-echo $HOME
+
 cd $HOME
 git clone "https://github.com/JurekInholland/dotfiles"
 cd dotfiles
