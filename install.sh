@@ -12,4 +12,5 @@ echo "Install started."
 cd $HOME
 git clone "https://github.com/JurekInholland/dotfiles"
 cd dotfiles
+git pull
 sh "script.sh"
