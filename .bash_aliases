@@ -1,5 +1,4 @@
 
-. ~/.bash_aliases # source self
 
 # Aliases to quickly setup a new debian based VM/server
 alias update="sudo apt update && sudo apt upgrade"
