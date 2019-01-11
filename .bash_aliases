@@ -13,15 +13,13 @@ alias myaliases="cat ~/.bash_aliases"
 
 
 # Docker commands
-alias dps="sudo docker ps"
-alias dtest="sudo docker run --rm -it"
+alias dps="docker ps"
+alias dtest="docker run --rm -it"
 
 # Docker-compose
-alias dcu="sudo docker-compose down && docker-compose up -d"
-alias dcd="sudo docker-compose down --remove-orphans"
-alias dcl="sudo docker-compose logs -f -t"
-
-alias docker="sudo docker"
+alias dcu="docker-compose down && docker-compose up -d"
+alias dcd="docker-compose down --remove-orphans"
+alias dcl="docker-compose logs -f -t"
 
 des() { docker exec -it "$1" sh; } # Docker exec shell
 
