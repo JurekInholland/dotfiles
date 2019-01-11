@@ -18,8 +18,8 @@ alias dtest="sudo docker run --rm -it"
 
 # Docker-compose
 alias dcu="sudo docker-compose down && docker-compose up -d"
-alias dcd="sudo docker-compose down"
-
+alias dcd="sudo docker-compose down --remove-orphans"
+alias dcl="sudo docker-compose logs -f -t"
 
 alias docker="sudo docker"
 
