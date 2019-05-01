@@ -12,8 +12,6 @@ if [[ ! -f ~/.zr/init.zsh ]] || [[ ~/.zshrc -nt ~/.zr/init.zsh ]]; then
     zpm-zsh/colors \
     desyncr/auto-ls \
     webyneter/docker-aliases \
-    JurekInholland/dotfiles \
+    jurekInholland/dotfiles \
 fi
-
 source ~/.zr/init.zsh
-# end
