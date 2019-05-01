@@ -1,7 +1,7 @@
 if [[ ! -f ~/.zr/init.zsh ]] || [[ ~/.zshrc -nt ~/.zr/init.zsh ]]; then
   zr load \
-    sorin-ionescu/prezto/modules/git/alias.zsh \
     frmendes/geometry \
+    sorin-ionescu/prezto/modules/git/alias.zsh \
     sorin-ionescu/prezto/modules/history/init.zsh \
     zdharma/fast-syntax-highlighting \
     molovo/tipz \
@@ -12,6 +12,8 @@ if [[ ! -f ~/.zr/init.zsh ]] || [[ ~/.zshrc -nt ~/.zr/init.zsh ]]; then
     zpm-zsh/colors \
     desyncr/auto-ls \
     webyneter/docker-aliases \
-    jurekInholland/dotfiles \
+    jurekInholland/dotfiles/zsh/kubectl.zsh \
+    jurekInholland/dotfiles/zsh/aliases.zsh \
+    
 fi
 source ~/.zr/init.zsh
